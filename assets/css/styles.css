@@ -1,0 +1,116 @@
+/*Global selector*/
+* {
+  /*sets box sizing so the textinput fields will have a border*/
+  box-sizing: border-box;
+  /*creates static variable for green accent color*/
+  --accentcolor: #504c29;
+}
+
+/*Targets the root element and sets the backround image*/
+:root {
+  /*links baground image*/
+  background-image: url(../images/pexels-andreea-ch-371539-1166644.jpg);
+  /* Used if the image is unavailable */
+  background-color: #cccccc;
+  /* Resize the background image to cover the entire container */
+  background-size: cover;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /*left align image*/
+  background-position: left;
+}
+
+/*Targets the header element*/
+header {
+  /*Sets padding at 50px*/
+  padding: 50px;
+  /*Indicates header position is fixed*/
+  position: fixed;
+  /*Sets fixed position to the top of the viewport*/
+  top: 0;
+  /*Sets width to 100% of the view port*/
+  width: 100%;
+  /*Sets background color to green accent variable*/
+  background-color: var(--accentcolor);
+}
+
+/*Targets the body element*/
+body {
+  /*Sets the fong family*/
+  font-family: Georgia, serif;
+  /*Clears margin around body contents*/
+  margin: 0;
+  /*sets display to flex*/
+  display: flex;
+  /*flex direction is column*/
+  flex-direction: column;
+  /*Justifies contents on the Y axis*/
+  justify-content: center;
+  /*sets minimum height*/
+  min-height: 80vh;
+}
+
+/*Targets the landing page class*/
+.landingPage {
+  /*Adds padding to the top of the landingPage Class*/
+  padding-top: 10%;
+  /*sets display to flex*/
+  display: flex;
+  /*Tells flex direction align landingPageSL and landingPageSR
+  in a row instead of a column*/
+  flex-direction: row;
+  /*Align the child elements on the vertical axis*/
+  align-items: center;
+}
+
+/*Targets the Landing Page, Split Left*/
+.landingPageSL {
+  /*Contents on the left fill 100% of available width*/
+  width: 100%;
+  /*Sets font size for child elements*/
+  font-size: 400%;
+  /*aligns text to center*/
+  text-align: center;
+  /*sets font style to oblique*/
+  font-style: oblique;
+  /*Sets the blocks to the same size even if they contain different amounts of text*/
+  flex-basis: 100%;
+}
+
+/*Targets the h1 element*/
+h1 {
+  /*removes margin set in the body*/
+  margin: 0;
+}
+
+/*Targets the Landing Page, Split Right*/
+.landingPageSR {
+  /*sets margin left/right of form to 5% of width*/
+  margin: 0 5%;
+  /*Sets the blocks to the same size even if they contain different amounts of text*/
+  flex-basis: 100%;
+}
+
+/*Targets the h2 class*/
+h2 {
+  /*Sets font size*/
+  font-size: 200%;
+  /*Centers text*/
+  text-align: center;
+  /*clears margin set in the body*/
+  margin: 0;
+}
+
+/*Targets the footer element*/
+footer {
+  /*Sets padding at 20px*/
+  padding: 20px;
+  /*Indicates footer position is fixed*/
+  position: fixed;
+  /*Sets fixed position to the bottom of the viewport*/
+  bottom: 0;
+  /*Sets width to 100% of the view port*/
+  width: 100%;
+  /*Sets background color to green accent variable*/
+  background-color: var(--accentcolor);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <title>BlogMeUpScotty</title>
+  </head>
+
+  <body>
+    <!-- Header section, blank -->
+    <header></header>
+
+    <!-- Body of the landing page, split into 2 sectionst -->
+    <!-- Blog Title on the Left -->
+    <div class="landingPage">
+      <section class="landingPageSL">
+        <h1>The Random Blog</h1>
+      </section>
+
+      <!-- Blog form on the Right -->
+      <section class="landingPageSR">
+        <h2>What's on your mind?</h2>
+        <!-- Landing page form to enter a new blog article -->
+        <form>
+          <p>
+            <label for="username">Username</label>
+            <input class="text-input" id="username" type="text" placeholder="" />
+          </p>
+          <p>
+            <label for="title">Title</label>
+            <input class="text-input" id="title" type="text" placeholder="" />
+          </p>
+          <p>
+            <label for="content">Content</label>
+            <textarea class="text-input" id="content" placeholder=""></textarea>
+          </p>
+          <p>
+            <button>Submit</button>
+          </p>
+        </form>
+      </section>
+    </div>
+
+    <!-- Header section, blank -->
+    <footer></footer>
+
+    <!-- Updated link to JS to account for nested folders -->
+    <script src="./assets/js/form.js"></script>
+  </body>
+</html>
