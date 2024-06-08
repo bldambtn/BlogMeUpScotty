@@ -1,0 +1,36 @@
+/*Targets the p element inside the form element*/
+form p {
+  /*sets a 3% margin top-bottom*/
+  margin: 3% 0;
+}
+
+/*Targets the text-input class*/
+.text-input {
+  /*sets width of the input boxes to 100%*/
+  width: 100%;
+}
+
+/*Targets the label class*/
+label {
+  /*tells the labels to display in block above the text-input*/
+  display: block;
+}
+
+/*targets the submit button on the form class*/
+button {
+  /*sets the space above/below 'submit' to 1%
+  and the space left/right to 2%*/
+  padding: 1% 2%;
+  /*Makes the word submit appear in white*/
+  color: #fff;
+  /*Sets background color to green accent variable*/
+  background-color: var(--accentcolor);
+  /*sets border to none*/
+  border: none;
+  /*sets outline to none*/
+  outline: none;
+  /*sets cusrer to pointer when it hovers over the submit button*/
+  cursor: pointer;
+  /*sets the width of the submit button to 100%*/
+  width: 100%;
+}
