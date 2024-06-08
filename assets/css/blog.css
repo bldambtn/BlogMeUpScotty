@@ -1,0 +1,205 @@
+/*Global selector*/
+* {
+  /*sets box sizing so the textinput fields will have a border*/
+  box-sizing: border-box;
+  /*creates static variable for green accent color*/
+  --accentcolor: #504c29;
+  /*creates static variable for light font color*/
+  --lightFontColor: #ebebeb;
+}
+
+/*Targets the body element*/
+body {
+  /*sets baground color*/
+  background-color: #ebebeb;
+  /*Sets the fong family*/
+  font-family: Georgia, serif;
+  /*removes margin*/
+  margin: 0;
+}
+
+/*Targets the header element*/
+header {
+  /*sets the header position to absolute so it sits under the h1 and nav items*/
+  position: absolute;
+  /*anchors position to the top of the page*/
+  top: 0;
+  /*Sets header width to 100% of the viewport*/
+  width: 100%;
+  /*Sets 20px around header items*/
+  padding: 20px;
+  /*Sets background color to green accent variable*/
+  background-color: var(--accentcolor);  
+}
+
+/*Targets h1 in the header element*/
+header h1 {
+  /*makes h1 and nav items appear in line*/
+  display: inline-block;
+  /*Removes margin around h1 element*/
+  margin: 0;
+  /*sets header font size to 300%*/
+  font-size: 300%;
+  /*sets font style to oblique*/
+  font-style: oblique;
+  /*sets font color to light font variable*/
+  color: var(--lightFontColor);
+}
+
+/*Targets the nav element in the header*/
+nav {
+  /*makes nav items float right*/
+  float: right;
+}
+
+/*Targets the unordered list element*/
+ul {
+  /*Sets style to none*/
+  list-style-type: none;
+  /*sets margin around ul to 0*/
+  margin: 0;
+  /*sets padding around ul to 0*/
+  padding: 0;
+}
+
+/*Targets the list items in the nav*/
+li {    
+  /*makes list items appear inline*/
+  display: inline-block;
+  /*Sets a 20px padding to the left of list items*/
+  padding-left: 20px;
+}
+
+/*targets the submit button on the form class*/
+button {
+    margin: 0;
+  /*Makes the word submit appear in white*/
+  color: var(--accentcolor);
+  /*Sets background color to green accent variable*/
+  background-color: var(--lightFontColor);
+  /*sets border to none*/
+  border: none;
+  /*sets outline to none*/
+  outline: none;
+  /*sets cusrer to pointer when it hovers over the submit button*/
+  cursor: pointer;
+  /*Sets width to 60px*/
+  width: 60px;
+  /*Sets height to 34px*/
+  height: 34px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/*Targets the circle inside the toggle*/
+.slider:before {
+  /*makes the circle inside the toggle appear on top*/
+  position: absolute;
+  /*sets content to an empty string*/
+  content: "";
+  /*sets the cirlce's height*/
+  height: 26px;
+  /*sets the circle's width*/
+  width: 26px;
+  /*aligns the cirgle inside the toggle*/
+  left: 4px;
+  /*aligns the cirgle inside the toggle*/
+  bottom: 4px;
+  /*Sets the circle's color to while*/
+  background-color: white;
+  /*transition tools to set duration of transition*/
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/*Targets the toggle after the toggle is click, it changes color*/
+input:checked + .slider {
+  /*Sets the toggle's color after clicking*/
+  background-color: #2196f3;
+}
+
+/*i don't know what this does*/
+/* input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+} */
+
+/*Targets toggle and tansforms appearance*/
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/*Targets the slider around the circle to round it*/
+.slider.round {
+  border-radius: 34px;
+}
+
+/*Targets the circle inside the slider to make it a circle*/
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Targets the footer element*/
+footer {
+  /*Sets padding at 20px*/
+  padding: 20px;
+  /*Indicates footer position is fixed*/
+  position: fixed;
+  /*Sets fixed position to the bottom of the viewport*/
+  bottom: 0;
+  /*Sets width to 100% of the view port*/
+  width: 100%;
+  /*Sets background color to green accent variable*/
+  background-color: var(--accentcolor);
+  /*Sets font color to light font variable*/
+  color: var(--lightFontColor);
+  /*sets font size for all items inside the footer*/
+  font-size: 16px;
+}
+
+/*Targets the h2 element inside the footer*/
+footer h2 {
+  /*sets font size for h2*/
+  font-size: 16px;
+  /*center aligns h2*/
+  text-align: center;
+  /*removes margins set in footer class*/
+  margin: 0;
+}
+
+/*Targets the p element inside the footer*/
+footer p a {
+  /*aligns text left*/
+  text-align: left;
+  /*removes default text decoration*/
+  text-decoration: none;
+  /*Sets font color to light font variable*/
+  color: var(--lightFontColor);
+}

@@ -32,6 +32,8 @@ submitInput.addEventListener("click", function (event) {
     displayMessage("error", "Please complete the form to post.");
   } else if (content === "") {
     displayMessage("error", "Please complete the form to post.");
+  } else {
+    location.replace("./blog.html");
   }
 
   // Store inputs into the local storage
