@@ -34,3 +34,27 @@ button {
   /*sets the width of the submit button to 100%*/
   width: 100%;
 }
+
+/*Targets the message ID*/
+#msg {
+  /*message defaults to hidden*/
+  visibility: hidden;
+  /*sets message margin to 20px*/
+  margin-top: 20px;
+  /*sets font weight to 700*/
+  font-weight: 700;
+  /*Sets line height*/
+  height: 1.2em;
+  /*Sets font size*/
+  font-size: 1.2em;
+}
+
+/*If message errors, make text visible*/
+#msg.error {
+  visibility: visible;
+}
+
+/*Sets error message to red*/
+#msg.error {
+  color: #e6252c;
+}
