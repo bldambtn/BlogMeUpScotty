@@ -60,7 +60,7 @@ The following demo shows the web application's actual appearance and functionali
 ### Collaborator(s):
 
 * Travis Haynie, https://github.com/TravisHaynie, helped with code-reivew and introducting the DomContentLoaded event listener type.
-* Jacqlyn McQuade, https://github.com/, helped with code-reivew, introducting the DomContentLoaded event listener type, and assisting with toggle debug.
+* Jacqlyn McQuade, https://github.com/JacqMcQ, helped with code-reivew, introducting the DomContentLoaded event listener type, and assisting with toggle debug.
 
 ### Research Sources:
 
