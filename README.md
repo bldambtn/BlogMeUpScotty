@@ -44,16 +44,47 @@ THEN I am presented with a link to the developer's portfolio.
 
 ### Mock-up
 
-The following image shows the web application's appearance and functionality:
-![Blog Mock-up](../BlogMeUpScotty/assets/images/100-web-apis-challenge-demo.gif)
+The following image shows the web application's intended appearance and functionality:
+![Original Blog Mock-up](../BlogMeUpScotty/assets/images/100-web-apis-challenge-demo.gif)
+
+The following image shows the web application's actual appearance and functionality:
 
 ## Link to Deployed application
+
+* https://bldambtn.github.io/BlogMeUpScotty/
 
 ## Credits
 
 ### Collaborator(s):
 
+* Travis Haynie, https://github.com/TravisHaynie, helped with code-reivew and introducting the DomContentLoaded event listener type.
+* Jacqlyn McQuade, https://github.com/, helped with code-reivew, introducting the DomContentLoaded event listener type, and assisting with toggle debug.
+
 ### Research Sources:
+
+* Geeks for Geeks. (accessed June 8, 2024) How To Create a Fixed Footer. Retrieved from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ 
+* Mozilla. (accessed June 8, 2024). CSS Cursor. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Web/CSS/cursor 
+* Mozilla. (accessed June 8, 2024). CSS Width. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Web/CSS/width
+* Mozilla. (accessed June 8, 2024). Document: DOMContentLoaded Event. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event 
+* Mozilla. (accessed June 8, 2024). Font Family. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Web/CSS/font-family 
+* Mozilla. (accessed June 8, 2024). Font Styles. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Web/CSS/font-style 
+* Mozilla. (accessed June 8, 2024).  localStorage. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage 
+* She Codes. (accessed June 8, 2024) Flex-Basis. Retrieved From https://www.shecodes.io/athena/3168-creating-equal-sized-text-blocks-with-flexbox#:~:text=This%20is%20possible%20to%20do,contain%20different%20amounts%20of%20text
+* W3Schools. (accessed June 8, 2024). Background Image. Retrieved from https://www.w3schools.com/cssref/pr_background-image.php 
+* W3Schools. (accessed June 8, 2024).  How To – CSS Switch. Retrieved from https://www.w3schools.com/howto/howto_css_switch.asp 
+* W3Schools. (accessed June 8, 2024). How To – JS Redirect. Retrieved from https://www.w3schools.com/howto/howto_js_redirect_webpage.asp 
+* W3Schools. (accessed June 8, 2024). HTML DOM Document addEventListener(). Retreived from https://www.w3schools.com/jsref/met_document_addeventlistener.asp 
+
+### Course Citation:
+
+* Course Name: Full Stack Application Development, Modals 3 and 4
+Platform: EdX
+Year: 2027
+edX Boot Camps LLC. (Year). Full Stack Application Development [Course]. EdX. https://www.edx.org
+
+### Image Source:
+
+* Ch., Andreea (2018). Green Potted Plant on White Ceramic Vase. Retrieved from https://www.pexels.com/photo/green-potted-plant-on-white-ceramic-vase-1166644/  
 
 ## License
 

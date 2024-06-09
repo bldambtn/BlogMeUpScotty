@@ -12,7 +12,7 @@
     <!-- Header section, blank -->
     <header></header>
 
-    <!-- Body of the landing page, split into 2 sectionst -->
+    <!-- Body of the landing page, split into 2 sections -->
     <!-- Blog Title on the Left -->
     <div class="landingPage">
       <section class="landingPageSL">
@@ -23,23 +23,22 @@
       <section class="landingPageSR">
         <h2>What's on your mind?</h2>
         <!-- Landing page form to enter a new blog article -->
-        <form>
+        <form id="form">
           <p>
             <label for="username">Username</label>
-            <input class="text-input" id="username" type="text" placeholder="" />
+            <input class="text-input" id="username" type="text" name="username" required/>
           </p>
           <p>
             <label for="title">Title</label>
-            <input class="text-input" id="title" type="text" placeholder="" />
+            <input class="text-input" id="title" type="text" name="title" required/>
           </p>
           <p>
             <label for="content">Content</label>
-            <textarea class="text-input" id="content" placeholder=""></textarea>
+            <textarea class="text-input" id="content" name="content" required></textarea>
           </p>          
           <p>
-            <button id="submit-btn" >Submit</button>
+            <button id="submit-btn">Submit</button>
           </p>
-          <div id="msg"></div>
         </form>
       </section>
     </div>
