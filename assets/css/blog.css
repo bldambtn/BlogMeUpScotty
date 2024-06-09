@@ -29,7 +29,7 @@ header {
   /*Sets 20px around header items*/
   padding: 20px;
   /*Sets background color to green accent variable*/
-  background-color: var(--accentcolor);  
+  background-color: var(--accentcolor);
 }
 
 /*Targets h1 in the header element*/
@@ -54,14 +54,12 @@ nav {
 ul {
   /*Sets style to none*/
   list-style-type: none;
-  /*sets margin around ul to 0*/
-  margin: 0;
   /*sets padding around ul to 0*/
   padding: 0;
 }
 
 /*Targets the list items in the nav*/
-li {    
+li {
   /*makes list items appear inline*/
   display: inline-block;
   /*Sets a 20px padding to the left of list items*/
@@ -69,8 +67,7 @@ li {
 }
 
 /*targets the submit button on the form class*/
-button {
-    margin: 0;
+.backButton {
   /*sets border to none*/
   border: none;
   /*sets outline to none*/
@@ -83,6 +80,25 @@ button {
   height: 34px;
 }
 
+/* posts sections */
+.post {
+  background-color: var(--lightFontColor);
+  color: var(--accentcolor);
+  font-size: 14px;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  padding: 10px;
+  margin: 5px;
+  line-height: 18px;
+}
+
+.post h2 {
+  font-size: 18px;
+  border-bottom: 1px solid var(--darkModeBG);
+}
+
 /* Light Mode */
 .light {
   /*sets baground color*/
@@ -93,7 +109,7 @@ button {
   height: 100vh;
 }
 
-.light header h1{
+.light header h1 {
   /*sets font color to light font variable*/
   color: var(--lightFontColor);
 }
@@ -109,7 +125,7 @@ button {
   /*Sets background color to same color as the toggle button*/
   background-color: #ccc;
   /*Makes the word submit appear in green accent color*/
-  color: var(--accentcolor);  
+  color: var(--accentcolor);
 }
 
 /* Dark Mode */
@@ -122,9 +138,20 @@ button {
   height: 100vh;
 }
 
-.dark header h1{
+.dark header h1 {
   /*sets font color to dark mode font color*/
   color: var(--darkModeFT);
+}
+
+.dark .post {
+  background-color: #18302b;
+  color: var(--darkModeFT);
+  border: 1px solid #142723;
+  box-shadow: rgba(24, 48, 43, 2) 0 1px 2px 0, rgba(24, 48, 43, 0) 0 2px 4px 3px;
+}
+
+.dark .post h2 {
+  border-bottom: 1px solid var(--darkModeFT);
 }
 
 .dark footer {
@@ -143,7 +170,7 @@ button {
   /*Sets background color to dark mode background color*/
   background-color: var(--darkModeBG);
   /*Makes the word submit appear dark mode font color*/
-  color: var(--darkModeFT);  
+  color: var(--darkModeFT);
 }
 
 /* The switch - the box around the slider */
@@ -201,11 +228,6 @@ input:checked + .slider {
   background-color: black;
 }
 
-/*i don't know what this does*/
-/* input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-} */
-
 /*Targets toggle and tansforms appearance*/
 input:checked + .slider:before {
   background-color: darkgray;
@@ -256,4 +278,35 @@ footer p a {
   text-decoration: none;
   /*Sets font color to light font variable*/
   color: var(--lightFontColor);
+}
+
+/*media instructions for small screen*/
+@media screen and (max-width: 648px) {
+  header {
+    /*sets padding around header to 50px all directions*/
+    padding: 50px;
+    /*instructs contents of header to use flex display*/
+    display: flex;
+    /*extends instructions to flex display to put evenly space 
+        the profile image and the nav, header*/
+    display: center;
+    /*extends instructions to flex display to wrap items as
+        the screen size changes*/
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*centers nav items and stacks below profile image
+    reduces font size for header*/
+  header h1 {
+    order: 1;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  /*centers nav items and stacks below profile image
+    reduces padding around nav*/
+  header nav {
+    order: 2;
+  }
 }

@@ -114,3 +114,54 @@ footer {
   /*Sets background color to green accent variable*/
   background-color: var(--accentcolor);
 }
+@media screen and (max-width: 904px) {
+  .landingPageSL {
+    /*sets padding around header to 50px all directions*/
+    font-size: 300%;
+  }
+}
+
+@media screen and (max-width: 683px) {
+  .landingPage {
+    /*sets padding around header to 50px all directions*/
+    padding: 50px;
+    /*instructs contents of header to use flex display*/
+    display: flex;
+    /*extends instructions to flex display to put evenly space 
+        the profile image and the nav, header*/
+    display: center;
+    /*extends instructions to flex display to wrap items as
+        the screen size changes*/
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*centers nav items and stacks below profile image
+    reduces font size for header*/
+  .landingPageSL {
+    order: 1;
+    text-align: center;
+    font-size: 200%;    
+    padding: 10%;
+  }
+
+  /*centers nav items and stacks below profile image
+    reduces padding around nav*/
+  .landingPageSR {
+    order: 2;
+  }
+
+  #form {
+    background-color: var(--accentcolor);
+    padding: 2%;
+  }
+
+  #form p {
+    color: white;
+  }
+
+  #submit-btn {
+    background-color: darkgray;
+    color: var(--accentcolor);
+  }
+}

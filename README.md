@@ -44,10 +44,12 @@ THEN I am presented with a link to the developer's portfolio.
 
 ### Mock-up
 
-The following image shows the web application's intended appearance and functionality:
-![Original Blog Mock-up](../BlogMeUpScotty/assets/images/100-web-apis-challenge-demo.gif)
+The following demo shows the web application's intended appearance and functionality:
+![Original Blog Mock-up](./assets/images/100-web-apis-challenge-demo.gif)
 
-The following image shows the web application's actual appearance and functionality:
+The following demo shows the web application's actual appearance and functionality:
+
+![Final Blog Mock-up](./assets/images/finalMockUp.gif)
 
 ## Link to Deployed application
 

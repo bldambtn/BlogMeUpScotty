@@ -1,28 +1,30 @@
-// initiates blogForm variable from the form id
+//created variables
 const blogForm = document.getElementById("form");
 
-// event function to append form fields into
-// an array in localStorage
-blogForm.addEventListener("submit", function(event) {
-  // removes default functionality;
+// adding and event to the sumbit button
+blogForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const username = document.getElementById("username").value;
+  //created variables  
   const title = document.getElementById("title").value;
   const content = document.getElementById("content").value;
+  const username = document.getElementById("username").value;
 
   if (username === "" || title === "" || content === "") {
-    event.preventDefault;
+    event.preventDefault(); // Prevent form submission
   } else {
-    let blogArray = JSON.parse(localStorage.getItem("blogData")) || [];
-    const blogData = {
-      username: username,
+    const formData = {
       title: title,
       content: content,
+      username: username,
     };
-    blogArray.push(blogData);
-    localStorage.setItem("blogData", JSON.stringify(blogArray));
 
+    let posts = JSON.parse(localStorage.getItem("posts")) || [];
+    posts.push(formData);
+    // Store the updated posts array in localStorage
+    localStorage.setItem("posts", JSON.stringify(posts));
+
+    // Redirect to the blog.html
     window.location.href = "blog.html";
   }
 });

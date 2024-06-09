@@ -2,45 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
     <title>BlogMeUpScottyPosts</title>
   </head>
 
   <!-- Body -->
   <body>
-
     <!-- Div class that sets up light and dark mode classes-->
     <div class="container light">
-    <header>
+      <header>
+        <!-- Blog Title -->
+        <h1>The Random Blog</h1>
+        <nav>
+          <ul>
+            <!-- Back Button -->
+            <li>
+              <button class="backButton" id="back-btn"><strong>Back</strong></button>
+            </li>
 
-      <!-- Blog Title -->
-      <h1>The Random Blog</h1>
-      <nav>
-        <ul>
+            <!-- Light/Dark Mode Toggle-->
+            <li>
+              <label class="switch">
+                <input type="checkbox" id="theme-switcher" />
+                <span class="slider round"></span>
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-          <!-- Back Button -->
-          <li><button id="back-btn"><strong>Back</strong></button></li>
+      <!-- Main -->
+      <main>
+        <section id="posts"></section>
+      </main>
 
-          <!-- Light/Dark Mode Toggle-->
-          <li>
-            <label class="switch">
-              <input type="checkbox" id="theme-switcher">
-              <span class="slider round"></span>
-            </label>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main -->
-    <main></main>
-
-    <!-- Footer -->
-    <footer>
+      <!-- Footer -->
+      <footer>
         <h2>Made with ❤️️ by K. Stanton</h2>
-        <p>Portfolio: <a href="https://bldambtn.github.io/Professional-Portfolio/">Bldambtn</a></p>
-    </footer>
+        <p>
+          Portfolio:
+          <a href="https://bldambtn.github.io/Professional-Portfolio/"
+            >Bldambtn</a
+          >
+        </p>
+      </footer>
     </div>
 
     <!-- links to JS docs -->
