@@ -3,7 +3,7 @@
   /*sets box sizing so the textinput fields will have a border*/
   box-sizing: border-box;
   /*creates static variable for green accent color*/
-  --accentcolor: #504c29;
+  --accentcolor: #182724;
 }
 
 /*Targets the root element and sets the backround image*/

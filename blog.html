@@ -6,15 +6,26 @@
     <link rel="stylesheet" href="./assets/css/blog.css" />
     <title>BlogMeUpScottyPosts</title>
   </head>
+
+  <!-- Body -->
   <body>
+
+    <!-- Div class that sets up light and dark mode classes-->
+    <div class="container light">
     <header>
+
+      <!-- Blog Title -->
       <h1>The Random Blog</h1>
       <nav>
         <ul>
-          <li><button id="back-btn">Back</button></li>
+
+          <!-- Back Button -->
+          <li><button id="back-btn"><strong>Back</strong></button></li>
+
+          <!-- Light/Dark Mode Toggle-->
           <li>
             <label class="switch">
-              <input type="checkbox" />
+              <input type="checkbox" id="theme-switcher">
               <span class="slider round"></span>
             </label>
           </li>
@@ -22,12 +33,18 @@
       </nav>
     </header>
 
+    <!-- Main -->
     <main></main>
 
+    <!-- Footer -->
     <footer>
         <h2>Made with ❤️️ by K. Stanton</h2>
         <p>Portfolio: <a href="https://bldambtn.github.io/Professional-Portfolio/">Bldambtn</a></p>
     </footer>
+    </div>
+
+    <!-- links to JS docs -->
     <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/logic.js"></script>
   </body>
 </html>

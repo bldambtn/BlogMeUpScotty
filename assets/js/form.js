@@ -1,43 +1,28 @@
-// Initiate variable using ID in HTML,
-// captured as user enters info in the form fields
-const usernameInput = document.querySelector("#username");
-const titleInput = document.querySelector("#title");
-const contentInput = document.querySelector("#content");
-const msgDiv = document.querySelector("#msg");
-const submitInput = document.querySelector("#submit-btn");
+// initiates blogForm variable from the form id
+const blogForm = document.getElementById("form");
 
-// Function to display error message if
-// user fails to enter all fields
-function displayMessage(type, message) {
-  msgDiv.textContent = message;
-  msgDiv.setAttribute("class", type);
-}
-
-// function to submit the form
-// event listener to trigger function upon submission
-submitInput.addEventListener("click", function (event) {
-  //prevents default behavior
+// event function to append form fields into
+// an array in localStorage
+blogForm.addEventListener("submit", function(event) {
+  // removes default functionality;
   event.preventDefault();
 
-  // sets function specific variables based on the value that the user enters
-  const username = usernameInput.value;
-  const title = titleInput.value;
-  const content = contentInput.value;
+  const username = document.getElementById("username").value;
+  const title = document.getElementById("title").value;
+  const content = document.getElementById("content").value;
 
-  // if... else statement to trigger error logic
-  // all fields must be filled out to submit
-  if (username === "") {
-    displayMessage("error", "Please complete the form to post.");
-  } else if (title === "") {
-    displayMessage("error", "Please complete the form to post.");
-  } else if (content === "") {
-    displayMessage("error", "Please complete the form to post.");
+  if (username === "" || title === "" || content === "") {
+    event.preventDefault;
   } else {
-    location.replace("./blog.html");
-  }
+    let blogArray = JSON.parse(localStorage.getItem("blogData")) || [];
+    const blogData = {
+      username: username,
+      title: title,
+      content: content,
+    };
+    blogArray.push(blogData);
+    localStorage.setItem("blogData", JSON.stringify(blogArray));
 
-  // Store inputs into the local storage
-  localStorage.setItem("username", username);
-  localStorage.setItem("title", title);
-  localStorage.setItem("content", content);
+    window.location.href = "blog.html";
+  }
 });
